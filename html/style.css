@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+#survival-counter {
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+#survival-counter.hidden {
+    display: none;
+}
+
+.counter-container {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 250px;
+    overflow: hidden;
+}
+
+.counter-label {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.5px;
+}
+
+.counter-value {
+    color: #FF0000;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.8),
+                 0 0 25px rgba(255, 0, 0, 0.4);
+    letter-spacing: 1px;
+    min-width: 30px;
+    text-align: center;
+}
+
+/* Animación sutil al actualizar */
+.counter-value.updated {
+    animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
