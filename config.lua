@@ -1,28 +1,25 @@
 Config = {}
 
--- Configuración de UI
 Config.UI = {
     position = {
-        x = 0.02,  -- Esquina inferior izquierda (2% desde la izquierda)
-        y = 0.85   -- Esquina inferior izquierda (95% desde arriba)
+        x = 0.02,
+        y = 0.85
     },
     colors = {
-        background = '#1a0000',  -- Rojo oscuro
-        text = '#FFFFFF',         -- Blanco
-        accent = '#FF0000',       -- Rojo
-        border = '#CC0000'        -- Rojo oscuro para borde
+        background = '#1a0000',
+        text = '#FFFFFF',
+        accent = '#FF0000',
+        border = '#CC0000'
     }
 }
 
--- Configuración de día/noche
 Config.DayNight = {
-    dayStart = 6,    -- Hora de inicio del día (6:00)
-    nightStart = 20  -- Hora de inicio de la noche (20:00)
+    dayStart = 6,
+    nightStart = 20
 }
 
--- Configuración de guardado
 Config.Save = {
-    minute = 59,     -- Minuto para guardar (59)
-    second = 30      -- Segundo para guardar (30)
+    minute = 59,
+    second = 30
 }
 
